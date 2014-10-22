@@ -17,6 +17,10 @@ Once your container is running, verify you can reach devpi:
 
     $ curl http://localhost:3141/root/pypi/+simple/
 
+Optionally, you may want to mount a volume to devpi or perhaps run it detached:
 
-[devpi]: http://doc.devpi.net "devpi documentatino"
+    $ docker run --name devpi -p 3141:3141 -v /var/lib/devpi:/data mattupstate/devpi
+
+
+[devpi]: http://doc.devpi.net "devpi documentation"
 [pyhub]: https://registry.hub.docker.com/_/python/ "Official Python Docker images"
