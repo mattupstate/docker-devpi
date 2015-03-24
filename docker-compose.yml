@@ -1,0 +1,5 @@
+# A minimal sample docker-compose.yml
+
+proxy:
+#  image: mattupstate/devpi
+  build: .
